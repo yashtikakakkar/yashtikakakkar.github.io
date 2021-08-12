@@ -937,7 +937,8 @@ hr {
 #about .info-section .info-img img {
     background-color: transparent;
     border-color: rgba(0, 0, 0, .18);
-    width: 430px
+    width: 400px;
+    /* height: 480px; */
 }
 
 #about .info-section .info-content .content-subtitle {
@@ -1481,7 +1482,10 @@ hr {
 
 #portfolio .portfolio-section .filter-control {
     margin-bottom: 16px;
-    text-align: center
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #portfolio .portfolio-section .filter-control>li {
@@ -1535,6 +1539,11 @@ hr {
     width: 100%
 }
 
+.img-fluid {
+    border-radius: 5%;
+}
+
+
 #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper .item-content {
     left: 0;
     opacity: 0;
@@ -1562,12 +1571,15 @@ hr {
 
 #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper:hover:before {
     opacity: 1;
-    visibility: visible
+    visibility: visible;
+    border-radius: 5%;
+
 }
 
 #portfolio .portfolio-section .portfolio-grid .portfolio-wrapper:hover .item-content {
     opacity: 1;
-    visibility: visible
+    visibility: visible;
+    border-radius: 5%;
 }
 
 @media (max-width:767.98px) {
